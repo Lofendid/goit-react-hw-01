@@ -1,0 +1,35 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.status {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.online {
+  composes: status;
+  color: var(--status-online-color);
+}
+
+.offline {
+  composes: status;
+  color: var(--status-offline-color);
+}
